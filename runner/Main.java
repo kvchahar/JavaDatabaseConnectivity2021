@@ -1,6 +1,6 @@
-package my_data.runner;
+package runner;
 
-import databaseconnection.DatabaseConnection;
+import studentdatabaseconnectivity.DatabaseConnection;
 import student.Student;
 
 import javax.swing.*;
