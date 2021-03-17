@@ -3,7 +3,7 @@
  Section C
  Roll No 73
  */
-package databaseconnection;
+package studentdatabaseconnectivity;
 
 import javax.swing.*;
 import java.sql.Connection;
