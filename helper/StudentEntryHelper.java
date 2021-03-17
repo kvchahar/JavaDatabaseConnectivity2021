@@ -100,10 +100,10 @@ public class StudentEntryHelper {
             StringBuilder builder = new StringBuilder();
             while (resultSet.next()) {
                 int studentId = resultSet.getInt(ID_COLUMN);
-                String cityName = resultSet.getString(NAME_COLUMN);
-                String isTraversed = resultSet.getString(COURSE_COLUMN);
-                String kmsRequired = resultSet.getString(BRANCH_COLUMN);
-                Student student = new Student(studentId, cityName, isTraversed, kmsRequired);
+                String studentName = resultSet.getString(NAME_COLUMN);
+                String courseName = resultSet.getString(COURSE_COLUMN);
+                String branchName = resultSet.getString(BRANCH_COLUMN);
+                Student student = new Student(studentId, studentName, courseName, branchName);
                 builder.append(student.toString()).append("\n").append("-".repeat(150)).append("\n");
             }
             JTextArea textArea = new JTextArea(builder.toString());
